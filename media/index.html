@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from bloodmine-pe.ru/shop/ by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 03 Dec 2018 19:22:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Онлайн-магазин сервера BloodMine" />
+      <title>BloodMine - Магазин привилегий</title>
+	   	<link rel="shortcut icon" href="favicon.png">
+	<base >
+<link href="favicon.png" rel=icon type=image/png>
+<meta name="theme-color" content="#0c0c0c">
+	<link rel="stylesheet" href="style/css/bootstrap.css">
+	<link rel="stylesheet" href="style/css/main.css">
+	<link rel="stylesheet" href="style/css/jquery.formstyler.css">
+	
+	</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<span class="sr-only">Открыть меню</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			
+			 	<a href="../../external.html?link=http://bloodmine-pe.ru/" class="navbar-brand">BloodMine</a>
+			</div>
+			<div class="collapse navbar-collapse" id="menu">
+				
+				<ul class="nav navbar-nav navbar-right"><li>
+    <a href="../../external.html?link=http://bloodmine-pe.ru/index.html" target="_blank">Основная страница</a>
+</li><li>
+    <a href="../../external.html?link=https://vk.com/bmcpe" target="_blank">Группа ВК</a>
+</li><li>
+    <a href="../../external.html?link=https://vk.com/page-125773601_53113109" >Часто задаваемые вопросы</a>
+</li></ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container page">
+		<div class="row">
+			<noscript>
+				<div class="alert alert-danger">
+					<b>Ошибка!</b>
+					<p>Для работы сайта требуется <u>JavaScript</u>! Используйте браузер Chrome!</p>
+				</div>
+			</noscript>
+
+			<div class="col-md-6 col-md-offset-3">
+                                                <form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server0" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #1 (порт 19129) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="0">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server1" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #2  (порт 19133) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="1">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server2" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #3  (порт 19134) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="2">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server3" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #4  (порт 19135) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="3">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server4" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #5   (порт 19136) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="4">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server5" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #6  (порт 19137) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="5">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server6" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #7  (порт 19138) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="6">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server7" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #8  (порт 19139) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="7">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server8" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #9  (порт 19140) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="8">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><form action="../../external.html?link=http://bloodmine-pe.ru/shop/payment.php" method="POST" id="server9" class="server" data-toggle="validator" data-delay="200"  autocomplete="off">
+	<p id="selectMenu">
+        <button type="button" onclick="selectMenu();" class="btn btn-block btn-primary">
+            <i class="icon arrow-left"></i> Вернуться к выбору сервера
+        </button>
+    </p>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+		 <p> Выбранный сервер: BloodMine #10  (гриф-сервер) </p>
+			<div class="form-group has-feedback">
+				<label for="username" class="control-label"><i class="icon user"></i> Введите ваш ник:</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Заполните данное поле" pattern="^[0-9a-zA-Z-_\.][a-zA-Z-0-9-_\.]{2,20}$" maxlength="20" minlength="3" required>
+			</div>
+
+			<div class="form-group">
+				<label for="selid" class="control-label"><i class="icon th-list"></i> Выберите товар:</label>
+				<select id="selid" name="selid" class="styler width-auto" required>
+					<option selected disabled>Выберите товар</option>
+                    <optgroup label="Привилегии (Скидки 60%)">
+	<option value="2">Fly - 20 руб.</option><option value="3">ViP - 65 руб.</option><option value="4">Премиум - 129 руб.</option><option value="5">Креатив - 199 руб.</option><option value="6">Модератор - 339 руб.</option><option value="7">Главный Модератор - 379 руб.</option><option value="8">Админ - 429 руб.</option><option value="18">YouTube - 499 руб.</option><option value="9">Главный Админ - 699 руб.</option><option value="12">Антигрифер - 849 руб.</option><option value="10">Оператор - 1199 руб.</option><option value="11">BOSS - 1699 руб.</option><option value="13">Спонсор - 3200 руб.</option><option value="19">Создатель (СКИДКА 10%) - 6490 руб.</option></optgroup><optgroup label="Остальное (Скидки 30%)">
+	<option value="14">500000 - 65 руб.</option><option value="15">Разбан игрока - 90 руб.</option><option value="20">1000000 - 125 руб.</option><option value="16">1 Донат Кейс - 180 руб.</option><option value="17">3 Донат кейса - 299 руб.</option></optgroup>				</select>
+			</div>
+
+			<input type="hidden" name="server" value="9">
+
+			<div class="form-group">
+				<label for="merchant"><i class="icon triangle-right"></i> Выберите способ оплаты:</label>
+				<select id="merchant" name="merchant" class="styler width-auto" onChange="Selected(this)" required>
+                    <option value="unitpay">Стандартный способ (UnitPay)</option><option value="yfreekassa">FreeKassa</option><option value="zwalletone">WebMoney (без комиссии)</option>				</select>
+			</div>
+			 <div style="color: black; margin-bottom: 15px;">
+                    <input type="checkbox" checked="checked" disabled="disabled" style="width: 19px;"> 
+                    <font style="padding-top: -5px;"> 
+                    Подтверждаю свое согласие со всеми <a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">правилами</a> проекта. 
+                    </font>
+                </div>
+			<div id="phone-lable" class="form-group" style="display: none;">
+				<label for="phone" class="control-label"><i class="icon phone"></i> Номер телефона:</label>
+				<div class="input-group">
+					<span id="phone-addon" class="input-group-addon">+</span>
+					<input type="text" id="phone" name="phone" class="form-control" placeholder="Заполните данное поле" pattern="^(7|77|373|40|8|9|10|375|1|55|962)[0-9]{6,12}$" maxlength="12" aria-describedby="phone-addon">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group buy">
+						<button class="btn btn-success" type="submit" name="dosubm">Купить / Доплатить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form><div class="server-select">
+<center>
+  <h1><strong><font color="white">BloodMine</font></strong></h1>
+    <h4><font color="white">Пожалуйста, выберите сервер</font></h4>
+	</center>
+    
+        <button onclick="selectServer(0)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #1 (порт 19129)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(1)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #2  (порт 19133)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(2)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #3  (порт 19134)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(3)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #4  (порт 19135)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(4)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #5   (порт 19136)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(5)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #6  (порт 19137)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(6)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #7  (порт 19138)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(7)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #8  (порт 19139)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(8)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #9  (порт 19140)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    
+        <button onclick="selectServer(9)" class="btn btn-block btn-default">
+            <i class="icon chevron-right"></i> Сервер: BloodMine #10  (гриф-сервер)          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+        </button>
+
+    </div>
+
+<script>
+	function Selected(a) {
+		var merchant       = a.value;
+		var parentServerId = a.form.id;
+
+		if (merchant == 'qiwi' || merchant == 'qiwi|cash' || merchant == 'qiwi|cash' || merchant == 'qiwi|mobile' || merchant == 'qiwi|bank_card' || merchant == 'qiwi|webmoney') {
+			document.querySelector('#' + parentServerId + ' #phone-lable').style.display = 'block';
+		} else {
+			document.querySelector('#' + parentServerId + ' #phone-lable').style.display = 'none';
+		}
+		
+	}
+</script>			</div>
+            		</div>
+		
+	</div>
+
+                  <div class="panel-body">
+                     <center>
+                        <p><a class="btn btn-default" href="../../external.html?link=http://bloodmine-pe.ru/opisanie.html" target="_blank">Описание привилегий</a></p>
+						 <p><a class="btn btn-default" href="../../external.html?link=https://vk.com/page-125773601_53113109" target="_blank">Возникли вопросы по оплате?</a></p>
+                     </center>
+                  </div>
+				  <br>
+           <br>
+		   <br>
+	<footer class="footer">
+  		<div class="container">
+            <div class="row">
+              
+                <div class="col-sm-12 col-md-4">
+                    2018 &copy; BloodMine | devbloodmine@gmail.com
+                </div>
+				 <div class="col-sm-12 col-md-4">
+                   
+                </div>
+                <div class="col-sm-12 col-md-4 text-right">
+                    <a href="../../external.html?link=https://vk.com/topic-125773601_34764927" target="_blank">Правила</a><a href="../../external.html?link=https://vk.com/topic-125773601_34764925" target="_blank">Соглашение</a>                </div>
+            </div>
+  		</div>
+	</footer>
+
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="style/js/bootstrap.min.js"></script>
+	<script src="style/js/jquery.formstyler.min.js"></script>
+	<script src="style/js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+	var servers = parseInt('10'); // Это очень глупо, но меня бесило что IDE ругается на эту строку...
+	var serverID = 0;
+
+	function selectServer(servID)
+	{
+		$('.server-select').hide(400);
+		$('#server' + servID).show(400);
+		serverID = servID;
+	}
+	function selectMenu()
+	{
+		$('#server' + serverID).hide(400);
+		$('.server-select').show(400);
+	}
+	$(document).ready(function()
+	{
+        $('[data-toggle="tooltip"]').tooltip();
+        $('select').styler();
+
+        $('form.server').validator();
+
+		if (servers === 1)
+		{
+			$('#selectMenu').hide();
+			$('#server0').show(400);
+		}
+		else
+		{
+			$('.server-select').show(400);
+		}
+	});
+	</script>
+</body>
+
+<!-- Mirrored from bloodmine-pe.ru/shop/ by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 03 Dec 2018 19:23:02 GMT -->
+</html>
